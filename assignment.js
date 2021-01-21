@@ -20,3 +20,27 @@ function budgetCalculator(clock, phone, laptop){
 }
 var totalBudget = budgetCalculator(5, 10, 3);
 console.log(totalBudget);
+
+//Hotel Cost
+
+function hotelCost(days) {
+    if (days <= 10) {
+        cost = days * 100;
+    }
+    else if (days <= 20) {
+        var firstTenDays = 10 * 100; // First Ten Days Per Night 100Tk Hotel Rent.
+        var remainingDays = days - 10;
+        var secondTenDays = remainingDays * 80; // 11th-20th Days per night 20% Discount thatsway (100-20 = 80)
+        cost = firstTenDays + secondTenDays;
+    }
+    else {
+        var firstTenDays = 10 * 100;
+        var secondTenDays = 10 * 80; 
+        var remainingDays = days - 20;
+        var afterTwentyDays = remainingDays * 50; //After Twenty Days per night 50tk Hotel Rent.
+        cost = firstTenDays + secondTenDays + afterTwentyDays;
+    }
+    return cost;
+}
+var totalCost = hotelCost(23);
+console.log(totalCost);

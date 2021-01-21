@@ -44,3 +44,18 @@ function hotelCost(days) {
 }
 var totalCost = hotelCost(23);
 console.log(totalCost);
+
+// Mega Friend
+
+var friend = ['Bangladesh', 'India', 'Pakistan', 'Sheikh Hasina', 'Ikhtiyar al-Din Muhammad Bakhtiyar Khalji', 'Sheikh Mujibur Rahman'];
+
+function megaFriend(friend){
+    var longest = '';
+    for (var i = 0; i < friend.length; i++) {
+        if (friend[i].length > longest.length)
+            longest = friend[i];
+    }
+    return longest;
+}
+var longestName = megaFriend(friend);
+console.log(longestName);

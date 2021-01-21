@@ -8,3 +8,15 @@ function kilometerToMeter(kilometer){
 
 var result = kilometerToMeter(5);
 console.log(result);
+
+//Budget Calculator
+
+function budgetCalculator(clock, phone, laptop){
+    var clockCost = clock * 50;
+    var phoneCost = phone * 100;
+    var laptopCost = laptop * 500;
+    var totalExpense = clockCost + phoneCost + laptopCost;
+    return totalExpense; 
+}
+var totalBudget = budgetCalculator(5, 10, 3);
+console.log(totalBudget);

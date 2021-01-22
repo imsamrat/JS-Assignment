@@ -5,7 +5,7 @@ function kilometerToMeter(kilometer) {
     if (kilometer > 0) {
         var meter = kilometer * 1000; //we know that, 1 kilometer = 1000 meter. 
     }
-    else{
+    else {
         meter = "Please enter a positive value";
     }
     return meter;
@@ -14,13 +14,13 @@ function kilometerToMeter(kilometer) {
 // 2. Budget Calculator
 
 function budgetCalculator(clock, phone, laptop) {
-    if (clock > 0 && phone > 0 && laptop > 0){
+    if (clock > 0 && phone > 0 && laptop > 0) {
         var clockCost = clock * 50;
         var phoneCost = phone * 100;
         var laptopCost = laptop * 500;
         var totalExpense = clockCost + phoneCost + laptopCost;
     }
-    else{
+    else {
         totalExpense = "Please Enter a positive Value";
     }
     return totalExpense;
@@ -55,11 +55,12 @@ function hotelCost(days) {
 
 // 4. Mega Friend
 
-function megaFriend(friend){
+function megaFriend(friend) {
     var longest = '';
     for (var i = 0; i < friend.length; i++) {
-        if (friend[i].length > longest.length)
+        if (friend[i].length > longest.length) {
             longest = friend[i];
+        }
     }
     return longest;
 }

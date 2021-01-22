@@ -1,8 +1,6 @@
 //https://github.com/s-m-samrat/assignment-3
 
-//https://github.com/s-m-samrat/assignment-3
-
-//Kilometer to Meter Convert
+// 1. Kilometer to Meter Convert
 function kilometerToMeter(kilometer) {
     if (kilometer > 0) {
         var meter = kilometer * 1000; //we know that, 1 kilometer = 1000 meter. 
@@ -12,27 +10,23 @@ function kilometerToMeter(kilometer) {
     }
     return meter;
 }
-/*var result = kilometerToMeter(5);
-console.log(result);*/
 
-//Budget Calculator
+// 2. Budget Calculator
 
 function budgetCalculator(clock, phone, laptop) {
     if (clock > 0 && phone > 0 && laptop > 0){
         var clockCost = clock * 50;
-    var phoneCost = phone * 100;
-    var laptopCost = laptop * 500;
-    var totalExpense = clockCost + phoneCost + laptopCost;
+        var phoneCost = phone * 100;
+        var laptopCost = laptop * 500;
+        var totalExpense = clockCost + phoneCost + laptopCost;
     }
     else{
         totalExpense = "Please Enter a positive Value";
     }
     return totalExpense;
 }
-/*var totalBudget = budgetCalculator(5, 10, 3);
-console.log(totalBudget);*/
 
-//Hotel Cost
+// 3. Hotel Cost
 
 function hotelCost(days) {
     if (days > 0) {
@@ -58,10 +52,8 @@ function hotelCost(days) {
     }
     return cost;
 }
-/*var totalCost = hotelCost(20);
-console.log(totalCost);*/
 
-// Mega Friend
+// 4. Mega Friend
 
 function megaFriend(friend){
     var longest = '';
@@ -71,5 +63,3 @@ function megaFriend(friend){
     }
     return longest;
 }
-/*var longestName = megaFriend(['Nayeem', 'Samrat', 'Rony']);
-console.log(longestName);*/
